@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111827;
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: flex;    /*flex puts the elements(logo, links, buttons) in one row*/
+    justify-content: space-between;    /*keeps spacing between logo button and links*/
+    padding: 0 50px;    /*0 for top and bottom 50px for left and right*/
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;    /*thin grey line below the navbar*/
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap:10px;    /*gap between text and img*/
+} 
+
+.logo img{
+    width: 50px;    /*size of small cap icon*/
+}
+
+.logo span{
+    font-size: 28px;
+    font-weight: 700;     /*700 bold*/
+}
+
+.nav-links {
+    display: flex;
+    gap: 45px;    /*space between each link*/
+}
+
+.nav-links a {
+    text-decoration: none;    /*to remove default underline of links*/
+    color: #374050;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 28px 0;    /* added 28px top and bottom padding to make link look taller*/ 
+    border-bottom: 3px solid transparent;    /*invisible line*/
+    
+
+}
+
+/* link which is selected */
+.nav-links a.active{
+    color: #7831d6;
+    border-bottom: 3px solid #7831d6;
+
+}
+
+.get-started {
+    color:white;
+    background-color: #7831d6;
+    text-decoration: none;
+    padding: 14px 20px;    /*14px top bottom, 20px left right*/
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;    /*makes corners round*/
+    align-content: center;
+}
+
+
+/* main section */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 70px;
+    min-height: 500px;
+    background-color: #fcfdff;
+}
+
+.main-text h1{
+    font-size: 55px;
+    font-weight: 800;    /*extra bold*/
+    margin-bottom: 25px;    /*space below heading*/
+}
+
+.purple-text {
+    color:  #7831d6;
+}
+
+.main-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    color: #4b5563;    /*grey color*/
+    
+}
+
+.main-buttons {
+    display: flex;
+    gap: 25px;    /*space between 2 buttons*/
+}
+
+/* common styling for both buttons */
+.btn-filled,
+.btn-outline {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 30px;
+    border-radius: 8px;
+
+}
+/* purple button with white text */
+.btn-filled{
+    background-color: #7831d6;
+    color: #fcfdff;
+}
+
+/* get started button */
+.btn-outline {
+    background-color: white;
+    color: #7831d6;
+    border: 2px solid #7831d6;
+}
+
+.main-image img {
+    width: 750px;
+    display: block;    /*removes tiny gap that appears under images*/
+
+}
+
+
+/* Features section */
+.features{
+    display: flex;
+    gap: 20px;
+    background-color: rgb(242, 242, 242);
+    padding: 0px 15px;
+}
+
+.box{
+    flex: 1;    /*all 3 boxes take equal width*/
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);    /*soft shadow: x,y,blur,color*/
+
+}
+.box img {
+    height: 45px;
+    width: 45px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.box p{
+    font-size: 18px;
+    color: rgb(67, 65, 65);
+}
+
+.box1 {
+    flex: 1;    /*all 3 boxes take equal width*/
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);    /*soft shadow: x,y,blur,color*/
+
+}
+.box1 img {
+    height: 50px;
+}
+.box1 h3 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+
